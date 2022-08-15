@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  max-width: 100%;
+}
+
+.right {
+  width: 80%;
+}
+
+.page_container {
+  display: flex;
+}
+
+@media (max-width: 800px) {
+  .left {
+    display: none;
+  }
+}

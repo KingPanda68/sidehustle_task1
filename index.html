@@ -1,0 +1,78 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project - Sign Up Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="page_container">
+        <div class="left">
+          <img src="./odin_task.jpg" alt="" />
+        </div>
+        <div class="right">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+            molestiae harum voluptas veritatis eos dicta ipsum praesentium
+            deleniti eligendi numquam.
+          </p>
+          <p>You want to know.</p>
+
+          <form action="">
+            <fieldset>
+              <p>Let's do this!</p>
+              <div style="display: flex">
+                <div class="input">
+                  <label for="firstname">FIRST NAME</label><br />
+                  <input
+                    type="text"
+                    id="firstname"
+                    value="Thor"
+                    required
+                  /><br />
+                </div>
+                <div class="input">
+                  <label for="firstname">LAST NAME</label><br />
+                  <input
+                    type="text"
+                    id="firstname"
+                    value="Odinson"
+                    required
+                  /><br />
+                </div>
+              </div>
+              <div style="display: flex">
+                <div class="input">
+                  <label for="email">EMAIL</label><br />
+                  <input type="email" id="email" required /><br />
+                </div>
+                <div class="input">
+                  <label for="phone">PHONE NUMBER</label><br />
+                  <input type="tel" id="phone" required /><br />
+                </div>
+              </div>
+              <div style="display: flex">
+                <div class="input">
+                  <label for="password">PASSWORD</label><br />
+                  <input type="password" id="phone" required /><br />
+                </div>
+                <div class="input">
+                  <label for="confrim">CONFIRM PASSWORD</label><br />
+                  <input type="password" id="confirm" required /><br />
+                </div>
+              </div>
+            </fieldset>
+            <input
+              type="submit"
+              value="Create Account"
+              onclick="alert('Kingsley is Awesome!')"
+            />
+          </form>
+          <p>Already have an account? <a href="#">Log In</a></p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
