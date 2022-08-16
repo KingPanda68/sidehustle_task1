@@ -4,25 +4,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project - Sign Up Form</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mansalva&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <section>
       <div class="page_container">
         <div class="left">
-          <img src="./odin_task.jpg" alt="" />
+          <div class="sidebar">
+            <div>
+              <img src="./assets/odin-lined.png" alt="" />
+            </div>
+            <div>
+              <h1>ODIN</h1>
+            </div>
+          </div>
         </div>
         <div class="right">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-            molestiae harum voluptas veritatis eos dicta ipsum praesentium
-            deleniti eligendi numquam.
-          </p>
-          <p>You want to know.</p>
+          <div class="heading">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae molestiae harum voluptas veritatis eos dicta ipsum
+              praesentium deleniti eligendi numquam.
+            </p>
+            <p>Sign up <em>now</em> to get started</p>
+            <br />
+            <p>You know you want to.</p>
+          </div>
 
           <form action="">
             <fieldset>
-              <p>Let's do this!</p>
+              <h3 class="let">Let's do this!</h3>
               <div style="display: flex">
                 <div class="input">
                   <label for="firstname">FIRST NAME</label><br />
@@ -53,7 +68,7 @@
                   <input type="tel" id="phone" required /><br />
                 </div>
               </div>
-              <div style="display: flex">
+              <div style="display: flex" class="pass">
                 <div class="input">
                   <label for="password">PASSWORD</label><br />
                   <input type="password" id="phone" required /><br />
@@ -64,13 +79,13 @@
                 </div>
               </div>
             </fieldset>
-            <input
-              type="submit"
-              value="Create Account"
-              onclick="alert('Kingsley is Awesome!')"
-            />
+            <button onclick="alert('Kingsley is Awesome!')">
+              Create Account
+            </button>
           </form>
-          <p>Already have an account? <a href="#">Log In</a></p>
+          <p style="margin-left: 2rem">
+            Already have an account? <a href="#">Log In</a>
+          </p>
         </div>
       </div>
     </section>
