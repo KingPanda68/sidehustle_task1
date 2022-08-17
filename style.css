@@ -124,3 +124,14 @@ a {
     display: none;
   }
 }
+
+@media (max-width: 1114px) {
+  .flexed {
+    flex-direction: column;
+  }
+  input {
+    width: 100%;
+    background-color: #66745a;
+    color: white;
+  }
+}
