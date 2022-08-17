@@ -14,7 +14,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 50%;
+  width: 40%;
   height: 55rem;
 }
 
@@ -56,8 +56,15 @@ form {
   width: 70%;
 }
 
-fieldset {
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
   background-color: white;
+  padding: 1rem 0;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .let {
@@ -75,10 +82,14 @@ input {
   padding: 0.3rem;
   font-size: large;
   border-radius: 0.4rem;
+  border: thin 1px;
 }
 
-input :focus {
-  border-color: blue !important;
+input:focus {
+  outline: none;
+  border-style: solid;
+  border-color: blue;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 }
 
 .input {
@@ -86,7 +97,7 @@ input :focus {
 }
 
 .pass {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 button {
