@@ -118,8 +118,22 @@ a {
   text-decoration: none;
   color: #596d48;
 }
-
+@media (min-width: 800px) {
+  #for_mobile {
+    display: none;
+  }
+}
 @media (max-width: 800px) {
+  #for_mobile {
+    background-color: #596d48;
+    height: 15rem;
+    margin-top: 4rem;
+  }
+  .heading {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+  }
   .left {
     display: none;
   }

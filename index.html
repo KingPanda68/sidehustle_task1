@@ -12,6 +12,14 @@
   </head>
   <body>
     <section>
+      <div class="sidebar" id="for_mobile">
+        <img
+          src="./assets/odin-lined.png"
+          alt=""
+          style="object-fit: cover"
+        />
+        <h1 style="align-self: center">ODIN</h1>
+      </div>
       <div class="page_container">
         <div class="left">
           <div class="sidebar">
@@ -34,7 +42,7 @@
             <p>You know you want to.</p>
           </div>
 
-          <form action="">
+          <form action="" onsubmit="return validate()">
             <div class="card">
               <h3 class="let">Let's do this!</h3>
               <div style="display: flex" class="flexed">
@@ -70,16 +78,17 @@
               <div style="display: flex" class="pass flexed">
                 <div class="input">
                   <label for="password">PASSWORD</label><br />
-                  <input type="password" id="password" required /><br />
+                  <input type="password" id="password" class="val" required /><br />
                 </div>
                 <div class="input">
                   <label for="confrim">CONFIRM PASSWORD</label><br />
-                  <input type="password" id="confirm" required /><br />
+                  <input type="password" id="confirm" class="val" required /><br />
+                  <p id="error" style="color: red;"></p>
                 </div>
               </div>
             </div>
             <div class="foot">
-            <button type="submit" onclick="alert('Kingsley is Awesome!')">
+            <button type="submit">
               Create Account
             </button>
           </form>
@@ -91,4 +100,16 @@
       </div>
     </section>
   </body>
+  <script>
+    function validate(){
+      let password = document.getElementById("password").value;
+      let confirmPassword = document.getElementById("confirm").value;
+      if ( password != confirmPassword){
+        document.getElementById("error").innerHTML = "password does not match!";
+        return false;
+      }
+      return true;
+    }
+    
+  </script>
 </html>
