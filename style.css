@@ -126,7 +126,7 @@ a {
 @media (max-width: 800px) {
   #for_mobile {
     background-color: #596d48;
-    height: 15rem;
+    height: 7rem;
     margin-top: 4rem;
   }
   .heading {
@@ -144,6 +144,7 @@ a {
   .foot {
     text-align: center;
     justify-content: center;
+    margin-left: 0;
   }
 }
 
