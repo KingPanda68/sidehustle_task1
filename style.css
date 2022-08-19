@@ -123,6 +123,14 @@ a {
   .left {
     display: none;
   }
+  form {
+    width: 100%;
+  }
+  button,
+  .foot {
+    text-align: center;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 1114px) {
