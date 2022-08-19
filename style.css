@@ -133,9 +133,11 @@ a {
     margin-left: 0;
   }
   .heading {
-    width: 100%;
+    width: 90%;
     max-width: 100%;
     margin-left: 0;
+    padding-left: 2rem;
+    font-size: medium;
   }
   .left {
     display: none;
@@ -149,6 +151,11 @@ a {
     justify-content: center;
     margin-left: 0;
   }
+  input {
+    width: 100%;
+    background-color: #66745a;
+    color: white;
+  }
 }
 
 @media (max-width: 1114px) {
@@ -157,7 +164,11 @@ a {
   }
   input {
     width: 100%;
-    background-color: #66745a;
-    color: white;
+  }
+  button,
+  .foot {
+    text-align: center;
+    justify-content: center;
+    margin-left: 0;
   }
 }
